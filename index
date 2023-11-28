@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Welcome to the Personalized Greeting App!");
+
+        // Prompt the user for their name
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+
+        // Prompt the user for their age
+        Console.Write("Enter your age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        // Display a personalized greeting
+        Console.WriteLine($"Hello, {name}! You are {age} years old.");
+
+        // Wait for the user to press a key before exiting
+        Console.WriteLine("Press any key to exit.");
+        Console.ReadKey();
+    }
+}
